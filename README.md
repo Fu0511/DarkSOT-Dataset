@@ -5,10 +5,10 @@ To advance nighttime UAV tracking research, we present DarkSOT, a dedicated benc
 
 
 # Citing DarkSOT
-@INPROCEEDINGS{darksot,
-  author={Chen, Yanyan and Fu, Ruigang and Song, Yu and Zhong, Ping},
-  title={TAE: Target-Aware Enhancer for Nighttime UAV Tracking},
-  booktitle={IEEE International Conference on Image Processing (ICIP)},
-  year={2026},
-  publisher={IEEE}
+@INPROCEEDINGS{darksot,\\
+  author={Chen, Yanyan and Fu, Ruigang and Song, Yu and Zhong, Ping},\\
+  title={TAE: Target-Aware Enhancer for Nighttime UAV Tracking},\\
+  booktitle={IEEE International Conference on Image Processing (ICIP)},\\
+  year={2026},\\
+  publisher={IEEE}\\
 }
