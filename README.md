@@ -33,6 +33,55 @@ selected (Fig. 3)...
   <p><em>Fig. 3. Six representative nighttime scenes. (a) Urban streets; (b) Urban arterial roads; (c) Campus grounds; (d) Grade-separated interchanges; (e) Pedestrian overpasses; (f) Rural areas.</em></p>
 </div>
 
+# Data Processing
+The collected data were first filtered to exclude videos with insufficient motion duration or 
+limited relative target movement. After filtering, a total of 268 video sequences were selected. 
+Bounding boxes were manually annotated using the DarkLabel software. A team of eight trained 
+annotators labeled every frame, followed by several rounds of cross-checking to minimize 
+annotation errors. The overall annotation process lasted more than three months.
+
+The annotated video sequences were partitioned into 192 training sequences and 76 testing 
+sequences, with no overlap between the two sets and full coverage of all target categories, 
+as illustrated in Fig. 4.
+
+<div align="center">
+  <img src="5testtrain.png" width="700" alt="Fig. 4. Train/Test Split">
+  <p><em>Fig. 4. Partition of training and testing sequences.</em></p>
+</div>
+
+# 12 Attributes
+Most existing nighttime low-light datasets lack comprehensive attribute annotations. For example, 
+UAVDark135 includes only six. To facilitate a more thorough performance evaluation of tracking 
+algorithms, we manually annotated 12 representative and challenging attributes: aspect ratio 
+change (ARC), background clutter (BC), camera rotation (CR), target fast displacement (TFD), 
+full occlusion (FOC), illumination variation (IV), low resolution (LR), out-of-view (OV), 
+partial occlusion (POC), similar object (SOB), scale variation (SV), and appearance variation 
+(AV). The attribute taxonomy was derived from the UAV123 dataset and refined to align with the 
+characteristics of our collected data. Detailed definitions of all attributes are provided in 
+Table 1, and their distribution across the dataset is visualized in Fig. 5.
+
+**Table 1. Descriptions of 12 different attributes in DarkSOT**
+
+| Attribute | Definition |
+|:---------:|:-----------|
+| **ARC** | Aspect ratio change between initial frame and subsequent frames exceeds [0.5, 2] range |
+| **BC** | Background Clutter: the background near the target has similar appearance as the target |
+| **CR** | Camera Rotation: abrupt rotation of the camera |
+| **TFD** | Target Fast Displacement: the motion of the ground truth is larger than tm pixels (tm = 20) |
+| **FOC** | Full Occlusion: the target is fully occluded |
+| **IV** | Illumination Variation: the illumination of the target changes significantly |
+| **LR** | Low Resolution: the number of pixels inside the ground truth rectangle is less than tr (tr = 1000) |
+| **OV** | Out-of-View: some portion of the target leaves the view |
+| **POC** | Partial Occlusion: the target is partially occluded |
+| **SOB** | Similar Object: there are objects of similar shape or same type near the target |
+| **SV** | Scale Variation: the ratio of initial and at least one subsequent bounding box is outside the range [0.5, 2] |
+| **AV** | Appearance Variation: target appearance varies significantly |
+
+<div align="center">
+  <img src="6sx.png" width="700" alt="Fig. 5. Attribute Distribution">
+  <p><em>Fig. 5. Distribution of 12 attributes across the dataset.</em></p>
+</div>
+
 # Citing DarkSOT
 @INPROCEEDINGS{darksot,<br>
   author={Chen, Yanyan and Fu, Ruigang and Song, Yu and Zhong, Ping},<br>
