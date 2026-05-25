@@ -14,7 +14,7 @@ and Van(shown in Fig. 1.).
 
 <div align="center">
   <img src="2category.png" width="700" alt="Fig. 1. Nine Target Classes">
-  <p><em>Fig. 1. Nine representative target classes.</em></p>
+  <p><em>Fig. 1. Nine representative objects. (a) People; (b) Awning tricycle; (c) Bicycle; (d) Bus; (e) Car; (f) Motor; (g) tricycle; (h) truck; (i) van.</em></p>
 </div>
 
 Each video sequence was annotated according to its corresponding object class. Fig. 2 summarizes 
@@ -22,7 +22,7 @@ the distribution of object categories in our dataset...
 
 <div align="center">
   <img src="3categorypie.png" width="500" alt="Fig. 2. Category Distribution">
-  <p><em>Fig. 2. Distribution of object categories.</em></p>
+  <p><em>Fig. 2. Proportional distribution of nine object categories in the DarkSOT dataset.</em></p>
 </div>
 
 To ensure coverage of diverse nighttime conditions, six representative application scenarios were 
@@ -30,7 +30,7 @@ selected (Fig. 3)...
 
 <div align="center">
   <img src="4scene.png" width="700" alt="Fig. 3. Six Application Scenarios">
-  <p><em>Fig. 3. Six representative application scenarios.</em></p>
+  <p><em>Fig. 3. Six representative nighttime scenes. (a) Urban streets; (b) Urban arterial roads; (c) Campus grounds; (d) Grade-separated interchanges; (e) Pedestrian overpasses; (f) Rural areas.</em></p>
 </div>
 
 # Citing DarkSOT
