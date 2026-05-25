@@ -46,7 +46,7 @@ as illustrated in Fig. 4.
 
 <div align="center">
   <img src="5testtrain.png" width="700" alt="Fig. 4. Train/Test Split">
-  <p><em>Fig. 4. Partition of training and testing sequences.</em></p>
+  <p><em>Fig. 4. Distribution of object categories in the training and test sets of the DarkSOT dataset.</em></p>
 </div>
 
 # 12 Attributes
@@ -64,22 +64,22 @@ Table 1, and their distribution across the dataset is visualized in Fig. 5.
 
 | Attribute | Definition |
 |:---------:|:-----------|
-| **ARC** | Aspect ratio change between initial frame and subsequent frames exceeds [0.5, 2] range |
-| **BC** | Background Clutter: the background near the target has similar appearance as the target |
-| **CR** | Camera Rotation: abrupt rotation of the camera |
-| **TFD** | Target Fast Displacement: the motion of the ground truth is larger than tm pixels (tm = 20) |
-| **FOC** | Full Occlusion: the target is fully occluded |
-| **IV** | Illumination Variation: the illumination of the target changes significantly |
-| **LR** | Low Resolution: the number of pixels inside the ground truth rectangle is less than tr (tr = 1000) |
-| **OV** | Out-of-View: some portion of the target leaves the view |
-| **POC** | Partial Occlusion: the target is partially occluded |
-| **SOB** | Similar Object: there are objects of similar shape or same type near the target |
-| **SV** | Scale Variation: the ratio of initial and at least one subsequent bounding box is outside the range [0.5, 2] |
-| **AV** | Appearance Variation: target appearance varies significantly |
+| **Aspect Ratio Change (ARC)** | Aspect ratio change between initial frame and subsequent frames exceeds [0.5, 2] range |
+| **Background Clutter (BC)** | Background Clutter: the background near the target has similar appearance as the target |
+| **Camera Rotation (CR)** | Camera Rotation: abrupt rotation of the camera |
+| **Target Fast Displacement (TFD)** | Target Fast Displacement: the motion of the ground truth is larger than tm pixels (tm = 20) |
+| **Full Occlusion (FOC)** | Full Occlusion: the target is fully occluded |
+| **Illumination Variation (IV)** | Illumination Variation: the illumination of the target changes significantly |
+| **Low Resolution (LR)** | Low Resolution: the number of pixels inside the ground truth rectangle is less than tr (tr = 1000) |
+| **Out of View (OV)** | Out-of-View: some portion of the target leaves the view |
+| **Partial Occlusion (POC)** | Partial Occlusion: the target is partially occluded |
+| **Similar Object (SOB)** | Similar Object: there are objects of similar shape or same type near the target |
+| **Scale Variation (SV)** | Scale Variation: the ratio of initial and at least one subsequent bounding box is outside the range [0.5, 2] |
+| **Appearance Variation (AV)** | Appearance Variation: target appearance varies significantly |
 
 <div align="center">
   <img src="6sx.png" width="700" alt="Fig. 5. Attribute Distribution">
-  <p><em>Fig. 5. Distribution of 12 attributes across the dataset.</em></p>
+  <p><em>Fig. 5. Distribution of 12 challenging attributes in the DarkSOT dataset.</em></p>
 </div>
 
 # Citing DarkSOT
