@@ -7,6 +7,11 @@ DarkSOT Dataset.z01<br>
 DarkSOT Dataset.zip<br>
 链接: https://pan.baidu.com/s/1V7iEUvswyv4RfvVpM8MvNA?pwd=9pn3 提取码: 9pn3 
 
+# Target Classes and Application Scenarios
+In alignment with the object category definitions from the VisDrone dataset, nine representative target classes were selected: People, Tricycle, Bicycle, Bus, Truck, Awning-tricycle, Motor, Car, and Van(shown in Fig. 1.). Each video sequence was annotated according to its corresponding object class. Fig. 2 summarizes the distribution of object categories in our dataset. The Car class accounts for the largest proportion (23.9\%), attributed to its ubiquity and ease of capture in diverse environments.In contrast, Tricycle constitutes the smallest proportion (3.7\%), likely due to its limited applicability in specific areas.
+
+To ensure coverage of diverse nighttime conditions, six representative application scenarios were selected (Fig. 3), including urban traffic roads (e.g., highways, intersections, T-junctions), urban streets, campuses, overpasses, and rural roads. Data collection was conducted at 21 locations throughout Changsha City, each encompassing one or more of these scenarios to capture a wide range of real-world nighttime environments.
+
 # Citing DarkSOT
 @INPROCEEDINGS{darksot,<br>
   author={Chen, Yanyan and Fu, Ruigang and Song, Yu and Zhong, Ping},<br>
